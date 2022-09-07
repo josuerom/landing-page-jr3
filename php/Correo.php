@@ -15,8 +15,7 @@
 	$asunto .= "Fecha de envío: ".date('d/m/Y', time());
 
 	$de = "josueromram3@gmail.com";
-	$para = $correo;
 
-	mail($para, "Asunto del mensaje", utf8_decode($asunto), $header);
+	mail($para, $de, utf8_decode($asunto), $header);
 	header("Location:index.html");
 ?>

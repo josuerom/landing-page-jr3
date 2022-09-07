@@ -102,7 +102,7 @@
     <footer id="contacto">
         <div class="contenedor">
             <h2 class="titulo">Compartenos tu opinion</h2>
-            <form action="/contacto.php" name="formulario" class="form" method="post">
+            <form action="/index.php" name="formulario" class="form" method="post">
                 <input class="input"  type="text" name="nombre" id="" placeholder="Nombre y apellido">
                 <input class="input"  type="email" name="correo" id="" placeholder="Correo electronico">
                 <textarea  class="input" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
@@ -110,7 +110,9 @@
             </form>
         </div>
     </footer>
-
+    <?php
+        include("correo.php");
+    ?>
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
 </body>
 

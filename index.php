@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,11 +107,11 @@
                 <textarea  class="input" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje..." required=""></textarea>
                 <input class="input"  type="submit" name="enviar" value="Enviar">
             </form>
+                <?php
+                    include("correo.php");
+                ?>
         </div>
     </footer>
-    <?php
-        include("correo.php");
-    ?>
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
 </body>
 

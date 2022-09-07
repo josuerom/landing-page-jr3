@@ -14,13 +14,11 @@
          $asunto .= "Tu mensaje: ".$mensaje."\r\n";
          $asunto .= "Fecha de envío: ".date('d/m/Y', time());
 
-         $de = "josueromram3@gmail.com";
          $titulo = "¡Gracias por darnos tu opinion!";
-
          $email = @mail($para, $titulo, $asunto, $header);
+        
          if ($email) {
-         echo "<h3>¡Correo enviado satisfactoriamente!</h4>";
-         //header("Location:index.html");
+            echo "<h3>¡Correo enviado satisfactoriamente!</h4>";
          }
       }
    }

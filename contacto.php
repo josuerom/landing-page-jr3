@@ -15,10 +15,10 @@
          $asunto .= "Fecha de envío: ".date('d/m/Y', time());
 
          $titulo = "¡Gracias por darnos tu opinion!";
-         $email = @mail($para, $titulo, $asunto, $header);
+         $mail = @mail($para,$titulo,$asunto,$header);
         
-         if ($email) {
-            echo "<h3>¡Correo enviado satisfactoriamente!</h4>";
+         if ($mail) {
+            echo "<h3>¡El correo se ha enviado satisfactoriamente, gracias!</h4>";
          }
       }
    }

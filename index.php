@@ -1,4 +1,3 @@
-<!-- @autores: Josué Romero - Wilmar Aldana 2022 -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -103,9 +102,9 @@
         <div class="contenedor">
             <h2 class="titulo">Compartenos tu opinion</h2>
             <form class="form" method="post">
-                <input class="input"  type="text" name="nombre" id="" placeholder="Nombre y apellido">
-                <input class="input"  type="email" name="correo" id="" placeholder="Correo electronico">
-                <textarea  class="input" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+                <input class="input"  type="text" name="nombre" id="" placeholder="Nombre y apellido" required="">
+                <input class="input"  type="email" name="correo" id="" placeholder="Correo electronico" required="">
+                <textarea  class="input" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje..." required=""></textarea>
                 <input class="input"  type="submit" name="enviar" value="Enviar">
             </form>
         </div>
